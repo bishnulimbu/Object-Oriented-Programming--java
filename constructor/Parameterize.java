@@ -1,4 +1,4 @@
-package constructor;
+
 
 
 // it is block which is similar to method have same as that class name.
@@ -9,6 +9,11 @@ package constructor;
 
 // use :
 // to initisialize object
+
+// type
+// Default constructor, which is create by compiler and it is hidden and it's doesn't have any argument 
+// no-argument constructor , which is created  by user or and programmer and it'd doesn't have any argument
+// parameterize constructor, which is created by user similar as a no-argument but, it contained a argument.
 
 
 class Test{
@@ -22,9 +27,10 @@ class Test{
 
 }
 
-public class intro {
+public class Parameterize {
     public static void main(String[] args) {
         Test t1 = new Test(12,"bishal koirala");
+        System.out.println(t1.name);
 
     }
 }
