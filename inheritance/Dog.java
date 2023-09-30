@@ -1,20 +1,27 @@
 class Animal{
     void eat(){
-        System.out.println("Hello world");
+        System.out.println("Dog is eating.");
     }
 }
 
 class Dog extends Animal{ 
-    public static void main(String[] args) {
-       Animal a = new Animal();
-       Dog d = new Dog();
-       Cat c = new Cat();
-       a.eat();
-       d.eat();
-       c.eat();
-    }
+  void beat(){
+    System.out.println("Dog is beating.");
+  }
 }
 
-class Cat extends Animal{
+class GermanShepherd extends Dog{
+    void head(){
+    System.out.println("German Shepherd is an expensive dog.");
+    super.eat();
+    beat();
+  }
+}
 
+public class MultiLevelInheritane {
+  public static void main(String[] args) {
+    GermanShepherd obj3 = new GermanShepherd();
+    obj3.head();
+    
+  }
 }
