@@ -6,12 +6,14 @@ class Animal{
 }
 
 class Dog extends Animal{
-
+    void drink(){
+System.out.println("dog is dringking");
 }
 
 public class Intro{
     public static void main(String[] args) {
         Dog d = new Dog();
         d.eat();
+        d.drink();
     }
 }
